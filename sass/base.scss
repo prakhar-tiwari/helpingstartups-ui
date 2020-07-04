@@ -9,19 +9,19 @@
 html {
     font-size: 62.5%; // 1rem = 10px
 
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5rem) {
         font-size: 43.75%; // 1rem = 7px
     }
 
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25rem) {
         font-size: 50%; // 1rem = 8px
     }
 
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 75rem) {
         font-size: 56.25%; // 1rem = 9px
     }
 
-    @media only screen and (min-width: 112.5em) {
+    @media only screen and (min-width: 112.5rem) {
         font-size: 75%; // 1rem = 12px
     }
 }

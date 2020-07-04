@@ -5,10 +5,11 @@
     width: 30rem;
     height: 50rem;
     margin: 5rem 1rem;
+    transition: all 0.5s;
 
     &__side {
         height: inherit;
-        transition: all 0.3s;
+        transition: all 0.5s;
         position: absolute;
         top: 0;
         left: 0;
@@ -145,5 +146,23 @@
     &__price-value {
         font-size: 4.5rem;
         font-weight: 300;
+    }
+
+    @media only screen and (max-width: 1050px) {
+        width: 35rem;
+        height: 46rem;
+        margin: 5rem 2rem;
+    }
+
+    @media only screen and (min-width: 1050px) and (max-width: 1079px) {
+        width: 25rem;
+        height: 46rem;
+        margin: 5rem 0.5rem;
+    }
+
+    @media only screen and (min-width: 1079px) and (max-width: 1400px) {
+        width: 26rem;
+        height: 46rem;
+        margin: 5rem 0.5rem;
     }
 }

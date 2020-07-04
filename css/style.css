@@ -7,16 +7,16 @@
 
 html {
   font-size: 62.5%; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5rem) {
     html {
       font-size: 43.75%; } }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25rem) {
     html {
       font-size: 50%; } }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 75rem) {
     html {
       font-size: 56.25%; } }
-  @media only screen and (min-width: 112.5em) {
+  @media only screen and (min-width: 112.5rem) {
     html {
       font-size: 75%; } }
 
@@ -47,7 +47,7 @@ body {
 .navbar {
   display: flex;
   margin: auto;
-  min-height: 10vh;
+  min-height: 10%;
   align-items: center;
   background: linear-gradient(rgba(8, 6, 6, 0.9), rgba(8, 6, 6, 0.9));
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -121,8 +121,8 @@ body {
       width: 50%;
       position: fixed;
       right: 0px;
-      min-height: 90vh;
-      top: 10vh;
+      min-height: 90%;
+      top: 10%;
       background: linear-gradient(#080606, #080606);
       display: flex;
       flex-direction: column;
@@ -163,8 +163,8 @@ body {
   .header .heading-primary {
     color: #e2e2e2;
     text-transform: uppercase;
-    width: 100rem;
-    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    font-family: "Oswald", sans-serif;
     line-height: 10rem;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden; }
@@ -200,6 +200,18 @@ body {
     opacity: 1;
     transform: translate(0, -10%); } }
 
+@media only screen and (max-width: 500px) {
+  .header__text-box {
+    top: 50%; }
+  .header .heading-primary {
+    line-height: 5rem; }
+    .header .heading-primary--main {
+      font-size: 2rem;
+      line-height: 3rem; }
+    .header .heading-primary--sub1 {
+      margin-top: 5rem;
+      font-size: 3.2rem; } }
+
 .btn, .btn:link, .btn:visited {
   display: inline-block;
   text-decoration: none;
@@ -209,7 +221,7 @@ body {
   position: relative;
   cursor: pointer;
   transition: all 0.5s;
-  margin: auto 1rem; }
+  margin: 0 1rem; }
 
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
@@ -247,10 +259,16 @@ body {
   .btn--white:hover {
     background-position: 100%; }
 
+@media only screen and (max-width: 500px) {
+  .btn:link, .btn:visited {
+    padding: 1.2rem 4rem;
+    font-size: 1.2rem;
+    margin: 1rem auto; } }
+
 .section-service-icons {
   height: 100%;
   display: flex;
-  margin: 2rem 0; }
+  margin: 3rem 0; }
 
 .section__service-icons {
   width: 100%;
@@ -266,7 +284,7 @@ body {
   border-radius: 1rem;
   position: relative; }
   .section__service-icons::before {
-    content: '';
+    content: "";
     background-color: rgba(31, 139, 4, 0.4);
     width: 100%;
     height: 3rem;
@@ -378,7 +396,7 @@ body {
   padding: 5rem 5rem;
   border-radius: 1rem; }
   .section__service-registration::before {
-    content: '';
+    content: "";
     width: 100%;
     height: 3rem;
     top: 0;
@@ -410,16 +428,32 @@ body {
   left: 50%;
   transform: translateX(-50%); }
 
+@media only screen and (max-width: 80rem) {
+  .section__service-icons-item {
+    width: 20rem;
+    height: 24rem; } }
+
+@media only screen and (min-width: 80rem) and (max-width: 100rem) {
+  .section__service-icons-item {
+    width: 22rem;
+    height: 24rem; } }
+
+@media only screen and (min-width: 100rem) and (max-width: 140rem) {
+  .section__service-icons-item {
+    width: 28rem;
+    height: 24rem; } }
+
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
   width: 30rem;
   height: 50rem;
-  margin: 5rem 1rem; }
+  margin: 5rem 1rem;
+  transition: all 0.5s; }
   .card__side {
     height: inherit;
-    transition: all 0.3s;
+    transition: all 0.5s;
     position: absolute;
     top: 0;
     left: 0;
@@ -506,3 +540,18 @@ body {
   .card__price-value {
     font-size: 4.5rem;
     font-weight: 300; }
+  @media only screen and (max-width: 1050px) {
+    .card {
+      width: 35rem;
+      height: 46rem;
+      margin: 5rem 2rem; } }
+  @media only screen and (min-width: 1050px) and (max-width: 1079px) {
+    .card {
+      width: 25rem;
+      height: 46rem;
+      margin: 5rem 0.5rem; } }
+  @media only screen and (min-width: 1079px) and (max-width: 1400px) {
+    .card {
+      width: 26rem;
+      height: 46rem;
+      margin: 5rem 0.5rem; } }

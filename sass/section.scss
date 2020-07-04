@@ -2,11 +2,11 @@
     &-service-icons {
         height: 100%;
         display: flex;
-        margin: 2rem 0;
+        margin: 3rem 0;
     }
 
     &__service-icons {
-        width:100%;
+        width: 100%;
         margin: auto;
         display: flex;
         flex-wrap: wrap;
@@ -19,9 +19,9 @@
         border-radius: 1rem;
         position: relative;
 
-        &::before{
-            content: '';
-            background-color: rgba($color-green-dark,0.4);
+        &::before {
+            content: "";
+            background-color: rgba($color-green-dark, 0.4);
             width: 100%;
             height: 3rem;
             top: 0;
@@ -46,7 +46,7 @@
     &__service-text {
         flex: 1;
         font-size: 2rem;
-        color:$color-white;
+        color: $color-white;
     }
 
     &__service-link {
@@ -74,14 +74,14 @@
             top: 41%;
             height: 14rem;
             width: 14rem;
-            margin-left: -5.9rem!important;
-            margin-top: -5.9rem!important;
+            margin-left: -5.9rem !important;
+            margin-top: -5.9rem !important;
             opacity: 1;
             transition: all 300ms;
         }
 
-        &:hover{
-            &::before{
+        &:hover {
+            &::before {
                 transform: scale(1.1);
             }
         }
@@ -163,13 +163,13 @@
         }
     }
 
-    &-service-registration{
+    &-service-registration {
         height: 100%;
         display: flex;
         margin: 2rem 0;
     }
 
-    &__service-registration{
+    &__service-registration {
         width: 100%;
         margin: auto;
         background: rgba($color-dark-1, 0.4);
@@ -177,47 +177,68 @@
         padding: 5rem 5rem;
         border-radius: 1rem;
 
-        &::before{
-            content: '';
+        &::before {
+            content: "";
             width: 100%;
-            height:3rem;
+            height: 3rem;
             top: 0;
             left: 0;
             position: absolute;
             display: block;
-            background-color: rgba($color-green-dark,0.4);
+            background-color: rgba($color-green-dark, 0.4);
             border-top-left-radius: 1rem;
             border-top-right-radius: 1rem;
         }
     }
 
-    &__service-header{
+    &__service-header {
         top: 5rem;
 
-        span h3{
+        span h3 {
             text-align: center;
             font-size: 4rem;
             color: $color-white-primary;
         }
 
-        span h6{
+        span h6 {
             text-align: center;
             font-size: 2.2rem;
             color: $color-white;
         }
     }
 
-    &__service-cards{
+    &__service-cards {
         margin: 5rem auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
 
-    &__service-button{
-        span a{
+    &__service-button {
+        span a {
             left: 50%;
             transform: translateX(-50%);
+        }
+    }
+
+    @media only screen and (max-width: 80rem) {
+        &__service-icons-item {
+            width: 20rem;
+            height: 24rem;
+        }
+    }
+
+    @media only screen and (min-width:80rem) and (max-width: 100rem) {
+        &__service-icons-item {
+            width: 22rem;
+            height: 24rem;
+        }
+    }
+
+    @media only screen and (min-width:100rem) and (max-width: 140rem) {
+        &__service-icons-item {
+            width: 28rem;
+            height: 24rem;
         }
     }
 }

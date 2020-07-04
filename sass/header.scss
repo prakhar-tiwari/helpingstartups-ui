@@ -13,8 +13,8 @@
     .heading-primary {
         color: $color-white;
         text-transform: uppercase;
-        width: 100rem;
-        font-family: 'Oswald', sans-serif;
+        width: 100%;
+        font-family: "Oswald", sans-serif;
         line-height: 10rem;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
@@ -25,7 +25,7 @@
             font-weight: bold;
             color: $color-yellow-dark;
             font-family: inherit;
-            animation: moveInRight 1.5s ease-out 0.5s; 
+            animation: moveInRight 1.5s ease-out 0.5s;
         }
 
         &--sub1 {
@@ -40,24 +40,43 @@
     }
 }
 
-@keyframes moveInRight{
-    from{
+@keyframes moveInRight {
+    from {
         opacity: 0;
         transform: translateX(10rem);
     }
-    to{
+    to {
         opacity: 1;
         transform: translate(0);
     }
 }
 
-@keyframes moveInLeft{
-    0%{
+@keyframes moveInLeft {
+    0% {
         opacity: 0;
-        transform: translate(-10rem,-10%);
+        transform: translate(-10rem, -10%);
     }
-    100%{
+    100% {
         opacity: 1;
-        transform: translate(0,-10%);
+        transform: translate(0, -10%);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .header {
+        &__text-box {
+            top: 50%;
+        }
+        .heading-primary {
+            line-height: 5rem;
+            &--main {
+                font-size: 2rem;
+                line-height: 3rem;
+            }
+            &--sub1 {
+                margin-top: 5rem;
+                font-size: 3.2rem;
+            }
+        }
     }
 }

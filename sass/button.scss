@@ -10,7 +10,7 @@
         position: relative;
         cursor: pointer;
         transition: all 0.5s;
-        margin: auto 1rem;
+        margin: 0 1rem;
     }
 
     &:hover {
@@ -20,7 +20,7 @@
         }
     }
 
-    &:active{
+    &:active {
         transform: translateY(0) scale(1);
     }
 
@@ -47,14 +47,25 @@
         }
     }
 
-    &--white{
-        background-color: rgba($color-white-primary,0.6);
-        box-shadow: 0.5rem .5rem 2rem rgba($color-white-primary,0.3);
+    &--white {
+        background-color: rgba($color-white-primary, 0.6);
+        box-shadow: 0.5rem 0.5rem 2rem rgba($color-white-primary, 0.3);
         color: $color-dark-1;
         background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white-primary 50%);
         background-size: 220%;
         &:hover {
             background-position: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .btn {
+        &:link,
+        &:visited {
+            padding: 1.2rem 4rem;
+            font-size: 1.2rem;
+            margin: 1rem auto;
         }
     }
 }

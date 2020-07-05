@@ -61,7 +61,7 @@
         }
     }
 
-    &--black {
+    &--green {
         background-color: $color-ocean-green;
         box-shadow: 0.5rem 0.5rem 2rem rgba($color-ocean-green, 0.3);
         color: $color-white-primary;
@@ -70,7 +70,6 @@
         text-align: center;
         border-radius: 0 !important;
         margin:auto 1rem;
-        padding: 1.5rem 3rem !important;
         &:hover {
             background-position: 100%;
         }

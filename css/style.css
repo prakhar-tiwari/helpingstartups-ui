@@ -286,7 +286,7 @@ body {
   .btn--white:hover {
     background-position: 100%; }
 
-.btn--black {
+.btn--green {
   background-color: #46ad7c;
   box-shadow: 0.5rem 0.5rem 2rem rgba(70, 173, 124, 0.3);
   color: #fff;
@@ -294,9 +294,8 @@ body {
   background-size: 220%;
   text-align: center;
   border-radius: 0 !important;
-  margin: auto 1rem;
-  padding: 1.5rem 3rem !important; }
-  .btn--black:hover {
+  margin: auto 1rem; }
+  .btn--green:hover {
     background-position: 100%; }
 
 @media only screen and (max-width: 250px) {
@@ -560,7 +559,7 @@ body {
       font-size: 1.6rem;
       font-weight: 300; }
   .section__company-details-icons-item {
-    width: 20em;
+    width: 22rem;
     height: 20rem;
     margin-top: 2rem;
     text-align: center; }
@@ -599,17 +598,113 @@ body {
     display: flex;
     justify-content: center; }
 
+.section-picture-description {
+  height: 100%;
+  display: flex; }
+
+.section__picture-description {
+  width: 100%;
+  margin: auto;
+  background: #fff;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap; }
+  .section__picture-description--1 {
+    width: 50%;
+    height: 35rem;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(/assets/business-associate.jpg) no-repeat center;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2rem; }
+  .section__picture-description--2 {
+    width: 50%;
+    height: 35rem;
+    background-image: url(/assets/handshake.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%; }
+  .section__picture-description--3 {
+    width: 50%;
+    height: 35rem;
+    background: linear-gradient(to right bottom, rgba(8, 6, 6, 0.8), rgba(66, 63, 63, 0.8)), url(/assets/bookshelf.jpg) no-repeat center;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .section__picture-description--3 > * {
+      width: 50%; }
+  .section__picture-description--4 {
+    width: 50%;
+    height: 35rem;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(/assets/lawbook.jpg) no-repeat center;
+    background-size: 100%; }
+
+.section__picture-heading {
+  text-align: center; }
+  .section__picture-heading--main-1 {
+    display: block;
+    font-size: 2.5rem;
+    color: #080606; }
+  .section__picture-heading--sub-1 {
+    display: block;
+    font-size: 2rem;
+    color: #423f3f; }
+  .section__picture-heading--main-3 {
+    display: block;
+    font-size: 2.5rem;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 1rem 0; }
+  .section__picture-heading--sub-3 {
+    display: block;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: #fff; }
+
+.section__picture-content-1 {
+  margin-top: 4rem;
+  text-align: center; }
+  .section__picture-content-1 > span {
+    font-size: 1.4rem;
+    line-height: 2.5rem; }
+
+.section__picture-content-3 {
+  margin-top: 3rem;
+  text-align: center;
+  color: #fff; }
+  .section__picture-content-3 > span {
+    font-size: 1.4rem;
+    line-height: 2.5rem; }
+
+.section__picture-button {
+  margin: auto; }
+  .section__picture-button > a {
+    padding: 1.5rem 5rem; }
+
 @media only screen and (max-width: 80rem) {
   .section__service-icons-item {
     width: 20rem;
     height: 24rem; } }
+
+@media only screen and (max-width: 950px) {
+  .section__company-details {
+    display: flex;
+    flex-direction: column; }
+    .section__company-details--left {
+      width: 100%; }
+    .section__company-details--right {
+      width: 100%; } }
 
 @media only screen and (min-width: 80rem) and (max-width: 100rem) {
   .section__service-icons-item {
     width: 22rem;
     height: 24rem; } }
 
-@media only screen and (min-width: 100rem) and (max-width: 140rem) {
+@media only screen and (min-width: 100rem) {
   .section__service-icons-item {
     width: 28rem;
     height: 24rem; } }

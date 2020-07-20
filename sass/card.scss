@@ -27,32 +27,16 @@
             width: 100%;
             transform: rotateY(180deg);
             &-1 {
-                background-image: linear-gradient(
-                    to right bottom,
-                    rgba($color-ocean-green, 0.8),
-                    rgba($color-ocean-green, 0.8)
-                );
+                background-image: linear-gradient(to right bottom, rgba($color-dark-1, 0.8), rgba($color-dark-1, 0.8));
             }
             &-2 {
-                background-image: linear-gradient(
-                    to right bottom,
-                    rgba($color-ocean-green, 0.8),
-                    rgba($color-ocean-green, 0.8)
-                );
+                background-image: linear-gradient(to right bottom, rgba($color-dark-1, 0.8), rgba($color-dark-1, 0.8));
             }
             &-3 {
-                background-image: linear-gradient(
-                    to right bottom,
-                    rgba($color-ocean-green, 0.8),
-                    rgba($color-ocean-green, 0.8)
-                );
+                background-image: linear-gradient(to right bottom, rgba($color-dark-1, 0.8), rgba($color-dark-1, 0.8));
             }
             &-4 {
-                background-image: linear-gradient(
-                    to right bottom,
-                    rgba($color-ocean-green, 0.8),
-                    rgba($color-ocean-green, 0.8)
-                );
+                background-image: linear-gradient(to right bottom, rgba($color-dark-1, 0.8), rgba($color-dark-1, 0.8));
             }
         }
     }
@@ -71,35 +55,19 @@
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
         &--1 {
-            background-image: linear-gradient(
-                to right bottom,
-                rgba($color-ocean-green, 0.8),
-                rgba($color-ocean-green, 0.8)
-            );
+            background-image: linear-gradient(to right bottom, rgba($color-dark-1, 0.8), rgba($color-dark-1, 0.8));
         }
 
         &--2 {
-            background-image: linear-gradient(
-                to right bottom,
-                rgba($color-ocean-green, 0.8),
-                rgba($color-ocean-green, 0.8)
-            );
+            background-image: linear-gradient(to right bottom, rgba($color-dark-1, 0.8), rgba($color-dark-1, 0.8));
         }
 
         &--3 {
-            background-image: linear-gradient(
-                to right bottom,
-                rgba($color-ocean-green, 0.8),
-                rgba($color-ocean-green, 0.8)
-            );
+            background-image: linear-gradient(to right bottom, rgba($color-dark-1, 0.8), rgba($color-dark-1, 0.8));
         }
 
         &--4 {
-            background-image: linear-gradient(
-                to right bottom,
-                rgba($color-ocean-green, 0.8),
-                rgba($color-ocean-green, 0.8)
-            );
+            background-image: linear-gradient(to right bottom, rgba($color-dark-1, 0.8), rgba($color-dark-1, 0.8));
         }
     }
 
@@ -123,32 +91,32 @@
             &--1 {
                 background-image: linear-gradient(
                     to right bottom,
-                    rgba(darken($color-ocean-green, 10%), 0.8),
-                    rgba(darken($color-ocean-green, 10%), 0.8)
+                    rgba($color-dark-2, 0.8),
+                    rgba($color-dark-2, 0.8)
                 );
             }
 
             &--2 {
                 background-image: linear-gradient(
                     to right bottom,
-                    rgba(darken($color-ocean-green, 10%), 0.8),
-                    rgba(darken($color-ocean-green, 10%), 0.8)
+                    rgba($color-dark-2, 0.8),
+                    rgba($color-dark-2, 0.8)
                 );
             }
 
             &--3 {
                 background-image: linear-gradient(
                     to right bottom,
-                    rgba(darken($color-ocean-green, 10%), 0.8),
-                    rgba(darken($color-ocean-green, 10%), 0.8)
+                    rgba($color-dark-2, 0.8),
+                    rgba($color-dark-2, 0.8)
                 );
             }
 
             &--4 {
                 background-image: linear-gradient(
                     to right bottom,
-                    rgba(darken($color-ocean-green, 10%), 0.8),
-                    rgba(darken($color-ocean-green, 10%), 0.8)
+                    rgba($color-dark-2, 0.8),
+                    rgba($color-dark-2, 0.8)
                 );
             }
         }

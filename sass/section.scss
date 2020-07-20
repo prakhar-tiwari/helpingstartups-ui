@@ -215,9 +215,9 @@
     }
 
     &__service-button {
-        span a {
-            left: 50%;
-            transform: translateX(-50%);
+        display: flex;
+        span  {
+            margin: auto;
         }
     }
 

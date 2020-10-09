@@ -74,6 +74,13 @@
             background-position: 100%;
         }
     }
+    &--outline{
+        border:2px solid $color-ocean-green;
+        box-shadow: 0.5rem 0.5rem 2rem rgba($color-ocean-green, 0.3);
+        color: $color-white-primary;
+        border-radius: 0 !important;
+        margin:auto 1rem;
+    }
 }
 
 @media only screen and (max-width: 250px) {

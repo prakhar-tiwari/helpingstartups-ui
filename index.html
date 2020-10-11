@@ -11,6 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Changa:wght@700&family=Oswald:wght@700&family=Roboto+Slab:wght@700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
 
@@ -21,20 +23,20 @@
             Your browser is not supported!
         </video>
     </div>
-    <div class="container">
-        <div class="navbar">
-            <div class="navbar__logo-container">
+    <div class="main-container">
+        <div class="customnavbar">
+            <div class="customnavbar__logo-container">
                 <h4>HelpingStartups</h4>
             </div>
-            <nav class="navbar__nav">
-                <ul class="navbar__list">
-                    <li class="navbar__item navbar__list--item1"><a class="navbar__link" href="#">Home</a></li>
-                    <li class="navbar__item navbar__list--item2"><a class="navbar__link" href="#">Services</a></li>
-                    <li class="navbar__item navbar__list--item3"><a class="navbar__link" href="#">About us</a></li>
-                    <li class="navbar__item navbar__list--item4"><a class="navbar__link" href="#">Sign in</a></li>
+            <div class="customnavbar__nav">
+                <ul class="customnavbar__list">
+                    <li class="customnavbar__item customnavbar__list--item1"><a class="customnavbar__link" href="#">Home</a></li>
+                    <li class="customnavbar__item customnavbar__list--item2"><a class="customnavbar__link" href="#">Services</a></li>
+                    <li class="customnavbar__item customnavbar__list--item3"><a class="customnavbar__link" href="#">About us</a></li>
+                    <li class="customnavbar__item customnavbar__list--item4"><a class="customnavbar__link" href="#">Sign in</a></li>
                 </ul>
-            </nav>
-            <div class="navbar__menu-lines">
+            </div>
+            <div class="customnavbar__menu-lines">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
@@ -52,8 +54,8 @@
                     </span>
                 </h1>
                 <div class="header__buttons">
-                    <a href="#" class="btn btn--primary btn--animated">Get My SaaS In Gear</a>
-                    <a href="#" class="btn btn--secondary btn--animated">Saas Marketing Insights</a>
+                    <a href="#" class="custom-btn custom-btn--primary custom-btn--animated">Get My SaaS In Gear</a>
+                    <a href="#" class="custom-btn custom-btn--secondary custom-btn--animated">Saas Marketing Insights</a>
                 </div>
             </div>
         </header>
@@ -147,14 +149,14 @@
                     </div>
 
                     <div class="section__service-cards">
-                        <div class="card">
-                            <div class="card__side card__side--front">
-                                <div class="card__picture card__picture--1"></div>
-                                <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--1">Private Limited
+                        <div class="service-card">
+                            <div class="service-card__side service-card__side--front">
+                                <div class="service-card__picture service-card__picture--1"></div>
+                                <h4 class="service-card__heading">
+                                    <span class="service-card__heading-span service-card__heading-span--1">Private Limited
                                         Company</span>
                                 </h4>
-                                <div class="card__details">
+                                <div class="service-card__details">
                                     <ul>
                                         <li>2 DSC</li>
                                         <li>DIN of 2 Directors</li>
@@ -166,26 +168,26 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="card__side card__side--back card__side--back-1">
-                                <div class="card__cta">
-                                    <div class="card__price-box">
-                                        <p class="card__price-only">Only</p>
-                                        <p class="card__price-value">&#8377 14999</p>
+                            <div class="service-card__side service-card__side--back service-card__side--back-1">
+                                <div class="service-card__cta">
+                                    <div class="service-card__price-box">
+                                        <p class="service-card__price-only">Only</p>
+                                        <p class="service-card__price-value">&#8377 14999</p>
                                     </div>
-                                    <a href="private-limited.html" class="btn btn--white">Register</a>
+                                    <a href="private-limited.html" class="custom-btn custom-btn--white">Register</a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="card">
-                            <div class="card__side card__side--front">
-                                <div class="card__picture card__picture--2"></div>
-                                <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--2">
+                        <div class="service-card">
+                            <div class="service-card__side service-card__side--front">
+                                <div class="service-card__picture service-card__picture--2"></div>
+                                <h4 class="service-card__heading">
+                                    <span class="service-card__heading-span service-card__heading-span--2">
                                         Limited Liability Partnership
                                     </span>
                                 </h4>
-                                <div class="card__details">
+                                <div class="service-card__details">
                                     <ul>
                                         <li>2 DSC</li>
                                         <li>DIN of 2 Directors</li>
@@ -197,26 +199,26 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="card__side card__side--back card__side--back-2">
-                                <div class="card__cta">
-                                    <div class="card__price-box">
-                                        <p class="card__price-only">Only</p>
-                                        <p class="card__price-value">&#8377 7999</p>
+                            <div class="service-card__side service-card__side--back service-card__side--back-2">
+                                <div class="service-card__cta">
+                                    <div class="service-card__price-box">
+                                        <p class="service-card__price-only">Only</p>
+                                        <p class="service-card__price-value">&#8377 7999</p>
                                     </div>
-                                    <a href="#popup" class="btn btn--white">Register</a>
+                                    <a href="#popup" class="custom-btn custom-btn--white">Register</a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="card">
-                            <div class="card__side card__side--front">
-                                <div class="card__picture card__picture--3"></div>
-                                <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--3">
+                        <div class="service-card">
+                            <div class="service-card__side service-card__side--front">
+                                <div class="service-card__picture service-card__picture--3"></div>
+                                <h4 class="service-card__heading">
+                                    <span class="service-card__heading-span service-card__heading-span--3">
                                         One Person Company
                                     </span>
                                 </h4>
-                                <div class="card__details">
+                                <div class="service-card__details">
                                     <ul>
                                         <li>1 DSC</li>
                                         <li>DIN of 2 Directors</li>
@@ -228,26 +230,26 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="card__side card__side--back card__side--back-3">
-                                <div class="card__cta">
-                                    <div class="card__price-box">
-                                        <p class="card__price-only">Only</p>
-                                        <p class="card__price-value">&#8377 17999</p>
+                            <div class="service-card__side service-card__side--back service-card__side--back-3">
+                                <div class="service-card__cta">
+                                    <div class="service-card__price-box">
+                                        <p class="service-card__price-only">Only</p>
+                                        <p class="service-card__price-value">&#8377 17999</p>
                                     </div>
-                                    <a href="#popup" class="btn btn--white">Register</a>
+                                    <a href="#popup" class="custom-btn custom-btn--white">Register</a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="card">
-                            <div class="card__side card__side--front">
-                                <div class="card__picture card__picture--4"></div>
-                                <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--4">
+                        <div class="service-card">
+                            <div class="service-card__side service-card__side--front">
+                                <div class="service-card__picture service-card__picture--4"></div>
+                                <h4 class="service-card__heading">
+                                    <span class="service-card__heading-span service-card__heading-span--4">
                                         Section 8 Company
                                     </span>
                                 </h4>
-                                <div class="card__details">
+                                <div class="service-card__details">
                                     <ul>
                                         <li>DIN of 2 Directors</li>
                                         <li>Name Reservation</li>
@@ -259,13 +261,13 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="card__side card__side--back card__side--back-4">
-                                <div class="card__cta">
-                                    <div class="card__price-box">
-                                        <p class="card__price-only">Only</p>
-                                        <p class="card__price-value">&#8377 24999</p>
+                            <div class="service-card__side service-card__side--back service-card__side--back-4">
+                                <div class="service-card__cta">
+                                    <div class="service-card__price-box">
+                                        <p class="service-card__price-only">Only</p>
+                                        <p class="service-card__price-value">&#8377 24999</p>
                                     </div>
-                                    <a href="#popup" class="btn btn--white">Register</a>
+                                    <a href="#popup" class="custom-btn custom-btn--white">Register</a>
                                 </div>
                             </div>
                         </div>
@@ -273,7 +275,7 @@
 
                     <div class="section__service-button">
                         <span>
-                            <a href="#popup" class="btn btn--secondary">View All Services</a>
+                            <a href="#popup" class="custom-btn custom-btn--secondary">View All Services</a>
                         </span>
                     </div>
                 </div>
@@ -309,7 +311,7 @@
                             </div>
                             <div class="card2__side card2__side--back card2__side--back-1">
                                 <div class="card2__cta">
-                                    <a href="#popup" class="btn btn--white">Start Now</a>
+                                    <a href="#popup" class="custom-btn custom-btn--white">Start Now</a>
                                 </div>
                             </div>
                         </div>
@@ -331,7 +333,7 @@
                             </div>
                             <div class="card2__side card2__side--back card2__side--back-1">
                                 <div class="card2__cta">
-                                    <a href="#popup" class="btn btn--white">Start Now</a>
+                                    <a href="#popup" class="custom-btn custom-btn--white">Start Now</a>
                                 </div>
                             </div>
                         </div>
@@ -353,7 +355,7 @@
                             </div>
                             <div class="card2__side card2__side--back card2__side--back-1">
                                 <div class="card2__cta">
-                                    <a href="#popup" class="btn btn--white">Start Now</a>
+                                    <a href="#popup" class="custom-btn custom-btn--white">Start Now</a>
                                 </div>
                             </div>
                         </div>
@@ -375,7 +377,7 @@
                             </div>
                             <div class="card2__side card2__side--back card2__side--back-1">
                                 <div class="card2__cta">
-                                    <a href="#popup" class="btn btn--white">Start Now</a>
+                                    <a href="#popup" class="custom-btn custom-btn--white">Start Now</a>
                                 </div>
                             </div>
                         </div>
@@ -400,8 +402,8 @@
                                 different business requirements and have collaborated with a vision to provide cost effective but
                                 quality efficient services to the new young entrepreneurs who want to set up their start-up to
                                 boost Indian Economy and build new Rising India.</p>
-                            <span class="section__company-details-btn">
-                                <a href="#popup" class="btn btn--green">Know More</a>
+                            <span class="section__company-details-custom-btn">
+                                <a href="#popup" class="custom-btn custom-btn--green">Know More</a>
                             </span>
                         </div> -->
                         <div class="section__company-details--bottom">
@@ -510,7 +512,7 @@
                                 on a client revenue share model with professionals by sharing warm leads</span>
                         </div>
                         <div class="section__picture-button">
-                            <a href="" class="btn btn--green">Join</a>
+                            <a href="" class="custom-btn custom-btn--green">Join</a>
                         </div>
                     </div>
                     <div class="section__picture-description--2">
@@ -526,7 +528,7 @@
                                 how to start and manage your business.</span>
                         </div>
                         <div class="section__picture-button">
-                            <a href="" class="btn btn--green">View</a>
+                            <a href="" class="custom-btn custom-btn--green">View</a>
                         </div>
                     </div>
                     <div class="section__picture-description--4">
@@ -534,6 +536,123 @@
                 </div>
             </section>
 
+            <section class="section-customerfeedback">
+                <div class="section__customerfeedback">
+                    <div class="section__customerfeedback-header">
+                        <h1>Customer Says</h1>
+                    </div>
+                    <div id="customer-testimonial" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                          </ol>
+                        <div class="carousel-inner">
+                          <div class="section__customerfeedback-slidecontainer carousel-item active" data-interval="2000">
+                            <div class="section__customerfeedback-slide">
+                                <span class="section__customerfeedback-slide-comment">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum commodi vitae, asperiores, eius earum a ipsam delectus</p>
+                                </span>
+                                <span class="section__customerfeedback-slide-customer">
+                                    <p>Bruce Wayne</p>
+                                </span>
+                            </div>
+                          </div>
+                          <div class="section__customerfeedback-slidecontainer carousel-item" data-interval="2000">
+                            <div class="section__customerfeedback-slide">
+                                <span class="section__customerfeedback-slide-comment">
+                                    <p>Veritatis laboriosam omnis, velit eius vel facere libero quo expedita id quidem, eos sunt molestias porro maiores, illum consectetur aliquam saepe delectus!</p>
+                                </span>
+                                <span class="section__customerfeedback-slide-customer">
+                                    <p>Bryan Adams</p>
+                                </span>
+                            </div>
+                          </div>
+                          <div class="section__customerfeedback-slidecontainer carousel-item" data-interval="2000">
+                            <div class="section__customerfeedback-slide">
+                                <span class="section__customerfeedback-slide-comment">
+                                    <p>Atque, debitis! Molestias, accusamus omnis provident quidem ex culpa nulla repudiandae repellat nihil ducimus maiores enim, autem voluptate. Voluptates cupiditate atque dolor?</p>
+                                </span>
+                                <span class="section__customerfeedback-slide-customer">
+                                    <p>Jonathan Jones</p>
+                                </span>
+                            </div>
+                          </div>
+                          <div class="section__customerfeedback-slidecontainer carousel-item" data-interval="2000">
+                            <div class="section__customerfeedback-slide">
+                                <span class="section__customerfeedback-slide-comment">
+                                    <p>Accusamus omnis provident quidem ex culpa nulla repudiandae repellat nihil ducimus maiores enim, autem voluptate. Voluptates cupiditate atque dolor?</p>
+                                </span>
+                                <span class="section__customerfeedback-slide-customer">
+                                    <p>Robert James</p>
+                                </span>
+                            </div>
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#customer-testimonial" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#customer-testimonial" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                </div>
+            </section>
+
+            <!-- <section class="section-customerfeedback">
+                <div class="section__customerfeedback">
+                    <div class="section__customerfeedback-header">
+                        <h1>Customer Says</h1>
+                    </div>
+                    <div class="section__customerfeedback-carousel">
+                        <div class="section__customerfeedback-slides">
+                            <div class="section__customerfeedback-slide">
+                                <span class="section__customerfeedback-slide-comment">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum commodi vitae, asperiores, eius earum a ipsam delectus</p>
+                                </span>
+                                <span class="section__customerfeedback-slide-customer">
+                                    <p>Bruce Wayne</p>
+                                </span>
+                            </div>
+                            <div class="section__customerfeedback-slide">
+                                <span class="section__customerfeedback-slide-comment">
+                                    <p>Eum commodi vitae, asperiores, eius earum a ipsam delectus deleniti sit consequatur suscipit voluptatem obcaecati neque natus, dignissimos quibusdam iusto! Corrupti, eius?</p>
+                                </span>
+                                <span class="section__customerfeedback-slide-customer">
+                                    <p>Clark Kent</p>
+                                </span>
+                            </div>
+                            <div class="section__customerfeedback-slide">
+                                <span class="section__customerfeedback-slide-comment">
+                                    <p>Consectetur adipisicing elit. Eum commodi vitae, asperiores, dignissimos quibusdam iusto! Corrupti, eius?</p>
+                                </span>
+                                <span class="section__customerfeedback-slide-customer">
+                                    <p>Barry Allen</p>
+                                </span>
+                            </div>
+                            <div class="section__customerfeedback-slide">
+                                <span class="section__customerfeedback-slide-comment">
+                                    <p>Commodi vitae, asperiores, eius earum a ipsam delectus dignissimos quibusdam iusto! Corrupti, eius?</p>
+                                </span>
+                                <span class="section__customerfeedback-slide-customer">
+                                    <p>Hal Jordan</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="section__customerfeedback-controls">
+                            <button class="section__customerfeedback-controls--prev-custom-btn">
+                                <i class="fa fa-arrow-left"></i>
+                            </button>
+                            <button class="section__customerfeedback-controls--next-custom-btn">
+                                <i class="fa fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
             
             <section class="section-allservices">
                 <div class="section__allservices">
@@ -635,8 +754,8 @@
                     </div>
                 </div>                
                 <div class="section__allservices-button">
-                    <span class="section__allservices-details-btn">
-                        <a href="#popup" class="btn btn--outline">View All Services</a>
+                    <span class="section__allservices-details-custom-btn">
+                        <a href="#popup" class="custom-btn custom-btn--outline">View All Services</a>
                     </span>
                 </div>
             </section>
@@ -647,11 +766,11 @@
 
     <script>
         const toggleMenu = () => {
-            const menuLines = document.querySelector('.navbar__menu-lines');
+            const menuLines = document.querySelector('.customnavbar__menu-lines');
             menuLines.addEventListener('click', function () {
-                document.querySelector('.navbar__nav').classList.toggle('nav-visible');
-                document.querySelector('.navbar__list').classList.toggle('nav-active');
-                const navLinks = document.querySelectorAll('.navbar__item')
+                document.querySelector('.customnavbar__nav').classList.toggle('nav-visible');
+                document.querySelector('.customnavbar__list').classList.toggle('nav-active');
+                const navLinks = document.querySelectorAll('.customnavbar__item')
                 navLinks.forEach((link, index) => {
                     if (link.style.animation) {
                         link.style.animation = '';
@@ -667,9 +786,13 @@
         }
 
         toggleMenu();
+        $('.carousel').carousel()
     </script>
 
     <script src="https://use.fontawesome.com/04123f3b9b.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

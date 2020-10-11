@@ -47,7 +47,7 @@ body {
 .customnavbar {
   display: flex;
   margin: auto;
-  min-height: 10%;
+  height: 10%;
   align-items: center;
   background: linear-gradient(rgba(8, 6, 6, 0.9), rgba(8, 6, 6, 0.9));
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -57,10 +57,10 @@ body {
   .customnavbar__logo-container {
     flex: 1;
     color: white;
-    font-size: 3rem;
     letter-spacing: 0.5rem; }
     .customnavbar__logo-container > h4 {
-      margin-left: 2rem; }
+      margin-left: 2rem;
+      font-size: 3rem; }
   .customnavbar__nav {
     flex: 1;
     color: white; }
@@ -697,6 +697,54 @@ body {
         font-size: 2rem; }
       .section__customerfeedback-controls button:focus {
         outline: none; }
+
+.section-allservices {
+  height: 100%;
+  background: rgba(8, 6, 6, 0.4);
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.section__allservices {
+  margin: auto;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly; }
+
+.section__allservices-details {
+  padding: 7rem 0; }
+  .section__allservices-details--header > h1 {
+    color: #fff;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #f3ef03; }
+  .section__allservices-details--links > ul {
+    margin: auto; }
+    .section__allservices-details--links > ul li {
+      position: relative;
+      list-style: none; }
+      .section__allservices-details--links > ul li:first-child {
+        margin-top: 2.2rem; }
+      .section__allservices-details--links > ul li:not(:first-child) {
+        margin-top: 1.2rem; }
+      .section__allservices-details--links > ul li > a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.4rem; }
+        .section__allservices-details--links > ul li > a:hover {
+          color: #46ad7c; }
+
+.section__allservices-button {
+  margin-bottom: 5rem; }
+  .section__allservices-button span {
+    font-size: 1.6rem; }
+    .section__allservices-button span a {
+      font-size: inherit; }
 
 .section-allservices {
   height: 100%;

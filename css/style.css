@@ -427,62 +427,10 @@ body {
   position: relative;
   margin: auto;
   margin-top: 2.5rem;
-  transition: 0.5s; }
-  .section__service-link::before {
-    border-radius: 100px;
-    content: "";
-    display: block;
-    position: absolute;
-    left: 41%;
-    top: 41%;
-    height: 14rem;
-    width: 14rem;
-    margin-left: -5.9rem !important;
-    margin-top: -5.9rem !important;
-    opacity: 1;
-    transition: all 300ms; }
-  .section__service-link:hover::before {
-    transform: scale(1.1); }
-  .section__service-link--1 {
-    background-color: #d31919; }
-    .section__service-link--1::before {
-      border: 2px solid #d31919; }
-  .section__service-link--2 {
-    background-color: #19d341; }
-    .section__service-link--2::before {
-      border: 2px solid #19d341; }
-  .section__service-link--3 {
-    background-color: #1979d3; }
-    .section__service-link--3::before {
-      border: 2px solid #1979d3; }
-  .section__service-link--4 {
-    background-color: #e06e11; }
-    .section__service-link--4::before {
-      border: 2px solid #e06e11; }
-  .section__service-link--5 {
-    background-color: #8f19d3; }
-    .section__service-link--5::before {
-      border: 2px solid #8f19d3; }
-  .section__service-link--6 {
-    background-color: #c64eca; }
-    .section__service-link--6::before {
-      border: 2px solid #c64eca; }
-  .section__service-link--7 {
-    background-color: #4119d3; }
-    .section__service-link--7::before {
-      border: 2px solid #4119d3; }
-  .section__service-link--8 {
-    background-color: #19d376; }
-    .section__service-link--8::before {
-      border: 2px solid #19d376; }
-  .section__service-link--9 {
-    background-color: #19bdd3; }
-    .section__service-link--9::before {
-      border: 2px solid #19bdd3; }
-  .section__service-link--10 {
-    background-color: #d31947; }
-    .section__service-link--10::before {
-      border: 2px solid #d31947; }
+  transition: all 0.5s; }
+  .section__service-link > img {
+    width: 10rem;
+    height: 10rem; }
   .section__service-link > i {
     font-size: 4.6rem;
     color: #e2e2e2;

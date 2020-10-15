@@ -45,6 +45,51 @@
     &:hover {
       background-color: $color-dark-2;
     }
+    & > a:hover {
+      text-decoration: none;
+      color: $color-white;
+      font-size: 2rem;
+    }
+    & .customnavbar__submenu {
+      display: flex;
+      padding: 40px;
+      position: absolute;
+      flex-wrap: wrap;
+      text-align: left;
+      justify-content: space-evenly;
+      background: linear-gradient(
+        rgba($color-dark-1, 0.9),
+        rgba($color-dark-1, 0.9)
+      );
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      top: -9999px;
+      left: 0;
+      width: 100vw;
+
+      &-list {
+        padding: 20px;
+        &-header {
+          font-size: 1.8rem;
+          color: rgb(243, 239, 3);
+        }
+        & > li {
+          list-style: none;
+          font-size: 1.4rem;
+          margin-top: 1rem;
+          & > a {
+            text-decoration: none;
+            color: #fff;
+            &:hover {
+              color: $color-ocean-green;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__list--item2:hover &__submenu {
+    top: 10vh;
   }
 
   &__link {

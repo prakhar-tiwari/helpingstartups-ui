@@ -2,18 +2,6 @@
   width: 100vw;
   height: 100vh;
   position: relative;
-  &__customer-query {
-    background: linear-gradient(
-        to right,
-        rgba($color-dark-3, 0.7),
-        rgba($color-dark-2, 0.7)
-      ),
-      url(/assets/private-limited-bg.jpg);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    background-size: 100vw 100vh;
-  }
   &__header {
     position: absolute;
     width: 100%;
@@ -36,23 +24,26 @@
     transform: translate(-50%, -30%);
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
   }
   &-query__advantages {
     transform: translateY(-8%);
     & > ul {
-      margin: auto;
-      padding: 5rem;
+      margin-top: 5rem;
+      display: flex;
+      justify-content: space-evenly;
       & .advantages__item {
+        width: 22rem;
         background-color: rgba($color-dark-1, 0.8);
         list-style: none;
         margin-top: 0.5rem;
         color: $color-white-primary;
         display: flex;
+        justify-content: space-evenly;
         font-size: 1.6rem;
-        & span {
-          padding: 1rem 2rem;
-        }
+        margin-left: 2rem;
+        padding: 1rem 0;
         &-icon > img {
           width: 3rem;
         }
@@ -60,30 +51,41 @@
     }
   }
   &-query__formdata {
-    padding: 3rem;
-    background-color: rgba($color-dark-1, 0.8);
+    margin-top: 5rem;
+    padding: 2rem;
   }
   &-query__form {
-    display: flex;
-    flex-direction: column;
     color: $color-white-primary;
+    &-fields {
+      display: flex;
+    }
     &-field {
       outline: none;
       border: none;
       background: none;
       border-bottom: 2px solid $color-white-primary;
-      padding: 1rem 0.5rem;
-      width: 30rem;
+      width: 22rem;
       margin-top: 1rem;
       font-size: 1.4rem;
+      margin-left: 2rem;
       color: $color-white-primary;
+      transition: all 0.3s;
       &::placeholder {
         color: $color-white-primary;
         font-size: 1.4rem;
       }
+      &:focus {
+        border-bottom: 2px solid $color-ocean-green;
+      }
     }
     & .btn {
       font-size: 1.6rem;
+      background-color: $color-ocean-green;
+      margin-left: 2rem;
+      width: 20rem;
+      &:hover,&:active, &:focus{
+        background-color: $color-ocean-green-dark;
+      }
     }
   }
   &-query__form-button {
@@ -91,13 +93,18 @@
     height: 4rem;
   }
   &__packages {
-    margin-top: 5rem;
-    &-content-header h1 {
-      font-size: 3.6rem;
-      text-align: center;
+    background: #fff;
+    &-content-header {
+      & > div {
+        margin-top: 5rem;
+      }
+      & h1 {
+        font-size: 3.6rem;
+        text-align: center;
+      }
     }
     &-content-main {
-      margin: 5rem 0;
+      margin-top: 5rem;
     }
   }
 
@@ -110,6 +117,7 @@
   &__about {
     &-header h1 {
       font-size: 3.6rem;
+      color: $color-dark-blue;
     }
     &-content {
       padding: 2rem 5rem;
@@ -122,6 +130,7 @@
   &__features {
     &-header h1 {
       font-size: 3.6rem;
+      color: $color-dark-blue;
     }
     &-content {
       padding: 2rem 5rem;
@@ -153,15 +162,17 @@
   &__requirements {
     &-header > h1 {
       font-size: 3.6rem;
+      color: $color-dark-blue;
     }
     &-content {
       padding: 2rem 5rem;
     }
-    &-content-card{
-      & .card-body > h5{
+    &-content-card {
+      & .card-body > h5 {
         font-size: 1.8rem;
       }
-      & .card-body, li {
+      & .card-body,
+      li {
         font-size: 1.6rem;
       }
     }
@@ -171,6 +182,7 @@
     margin-top: 2rem;
     &-header h1 {
       font-size: 3.6rem;
+      color: $color-dark-blue;
     }
     &-content {
       padding: 2rem 5rem;

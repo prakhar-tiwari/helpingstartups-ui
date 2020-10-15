@@ -39,6 +39,21 @@ body {
       height: 100%;
       width: 100%;
       object-fit: cover; }
+  body .bg-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    background: linear-gradient(to right, rgba(101, 73, 73, 0.7), rgba(66, 63, 63, 0.7)), url(/assets/private-limited-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh; }
+    body .bg-image__content {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
 
 @media only screen and (max-width: 768px) {
   body {
@@ -79,6 +94,38 @@ body {
     transition: all 0.3s ease-in; }
     .customnavbar__item:hover {
       background-color: #423f3f; }
+    .customnavbar__item > a:hover {
+      text-decoration: none;
+      color: #e2e2e2;
+      font-size: 2rem; }
+    .customnavbar__item .customnavbar__submenu {
+      display: flex;
+      padding: 40px;
+      position: absolute;
+      flex-wrap: wrap;
+      text-align: left;
+      justify-content: space-evenly;
+      background: linear-gradient(rgba(8, 6, 6, 0.9), rgba(8, 6, 6, 0.9));
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      top: -9999px;
+      left: 0;
+      width: 100vw; }
+      .customnavbar__item .customnavbar__submenu-list {
+        padding: 20px; }
+        .customnavbar__item .customnavbar__submenu-list-header {
+          font-size: 1.8rem;
+          color: #f3ef03; }
+        .customnavbar__item .customnavbar__submenu-list > li {
+          list-style: none;
+          font-size: 1.4rem;
+          margin-top: 1rem; }
+          .customnavbar__item .customnavbar__submenu-list > li > a {
+            text-decoration: none;
+            color: #fff; }
+            .customnavbar__item .customnavbar__submenu-list > li > a:hover {
+              color: #46ad7c; }
+  .customnavbar__list--item2:hover .customnavbar__submenu {
+    top: 10vh; }
   .customnavbar__link {
     text-decoration: none;
     color: #e2e2e2;
@@ -783,7 +830,7 @@ body {
       .section__allservices-details--links > ul li > a {
         color: #fff;
         text-decoration: none;
-        font-size: 1.4rem; }
+        font-size: 1.6rem; }
         .section__allservices-details--links > ul li > a:hover {
           color: #46ad7c; }
 
@@ -1093,12 +1140,6 @@ body {
   width: 100vw;
   height: 100vh;
   position: relative; }
-  .private-limited__customer-query {
-    background: linear-gradient(to right, rgba(101, 73, 73, 0.7), rgba(66, 63, 63, 0.7)), url(/assets/private-limited-bg.jpg);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    background-size: 100vw 100vh; }
   .private-limited__header {
     position: absolute;
     width: 100%;
@@ -1118,67 +1159,83 @@ body {
     transform: translate(-50%, -30%);
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
     align-items: center; }
   .private-limited-query__advantages {
     transform: translateY(-8%); }
     .private-limited-query__advantages > ul {
-      margin: auto;
-      padding: 5rem; }
+      margin-top: 5rem;
+      display: flex;
+      justify-content: space-evenly; }
       .private-limited-query__advantages > ul .advantages__item {
+        width: 22rem;
         background-color: rgba(8, 6, 6, 0.8);
         list-style: none;
         margin-top: 0.5rem;
         color: #fff;
         display: flex;
-        font-size: 1.6rem; }
-        .private-limited-query__advantages > ul .advantages__item span {
-          padding: 1rem 2rem; }
+        justify-content: space-evenly;
+        font-size: 1.6rem;
+        margin-left: 2rem;
+        padding: 1rem 0; }
         .private-limited-query__advantages > ul .advantages__item-icon > img {
           width: 3rem; }
   .private-limited-query__formdata {
-    padding: 3rem;
-    background-color: rgba(8, 6, 6, 0.8); }
+    margin-top: 5rem;
+    padding: 2rem; }
   .private-limited-query__form {
-    display: flex;
-    flex-direction: column;
     color: #fff; }
+    .private-limited-query__form-fields {
+      display: flex; }
     .private-limited-query__form-field {
       outline: none;
       border: none;
       background: none;
       border-bottom: 2px solid #fff;
-      padding: 1rem 0.5rem;
-      width: 30rem;
+      width: 22rem;
       margin-top: 1rem;
       font-size: 1.4rem;
-      color: #fff; }
+      margin-left: 2rem;
+      color: #fff;
+      transition: all 0.3s; }
       .private-limited-query__form-field::placeholder {
         color: #fff;
         font-size: 1.4rem; }
+      .private-limited-query__form-field:focus {
+        border-bottom: 2px solid #46ad7c; }
     .private-limited-query__form .btn {
-      font-size: 1.6rem; }
+      font-size: 1.6rem;
+      background-color: #46ad7c;
+      margin-left: 2rem;
+      width: 20rem; }
+      .private-limited-query__form .btn:hover, .private-limited-query__form .btn:active, .private-limited-query__form .btn:focus {
+        background-color: #058849; }
   .private-limited-query__form-button {
     margin-top: 2rem;
     height: 4rem; }
   .private-limited__packages {
-    margin-top: 5rem; }
+    background: #fff; }
+    .private-limited__packages-content-header > div {
+      margin-top: 5rem; }
     .private-limited__packages-content-header h1 {
       font-size: 3.6rem;
       text-align: center; }
     .private-limited__packages-content-main {
-      margin: 5rem 0; }
+      margin-top: 5rem; }
   .private-limited__allcontents {
     background-color: #ffffff;
     width: 100%;
     padding: 10rem; }
   .private-limited__about-header h1 {
-    font-size: 3.6rem; }
+    font-size: 3.6rem;
+    color: #081624; }
   .private-limited__about-content {
     padding: 2rem 5rem; }
     .private-limited__about-content p {
       font-size: 1.6rem; }
   .private-limited__features-header h1 {
-    font-size: 3.6rem; }
+    font-size: 3.6rem;
+    color: #081624; }
   .private-limited__features-content {
     padding: 2rem 5rem;
     font-size: 1.6rem; }
@@ -1200,17 +1257,20 @@ body {
       text-align: right;
       content: counter(item) "."; }
   .private-limited__requirements-header > h1 {
-    font-size: 3.6rem; }
+    font-size: 3.6rem;
+    color: #081624; }
   .private-limited__requirements-content {
     padding: 2rem 5rem; }
   .private-limited__requirements-content-card .card-body > h5 {
     font-size: 1.8rem; }
-  .private-limited__requirements-content-card .card-body, .private-limited__requirements-content-card li {
+  .private-limited__requirements-content-card .card-body,
+  .private-limited__requirements-content-card li {
     font-size: 1.6rem; }
   .private-limited__procedure {
     margin-top: 2rem; }
     .private-limited__procedure-header h1 {
-      font-size: 3.6rem; }
+      font-size: 3.6rem;
+      color: #081624; }
     .private-limited__procedure-content {
       padding: 2rem 5rem;
       font-size: 1.6rem; }

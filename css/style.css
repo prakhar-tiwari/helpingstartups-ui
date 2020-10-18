@@ -474,7 +474,7 @@ body {
     transform-origin: center;
     transform-box: fill-box; }
   .section__service-link-startup-india:hover #rotate-arrow {
-    animation: rotate-rupee 1s linear infinite;
+    animation: rotate-rupee 1.5s linear infinite;
     transform-origin: center;
     transform-box: fill-box; }
   .section__service-link-msme:hover #moving-part {
@@ -489,21 +489,39 @@ body {
     transform-box: fill-box; }
   .section__service-link-msme:hover #buttons #Vector_21 {
     animation: pop-buttons 1s ease infinite;
-    animation-delay: .2s;
+    animation-delay: 0.2s;
     transform-origin: center;
     transform-box: fill-box; }
   .section__service-link-msme:hover #buttons #Vector_22 {
     animation: pop-buttons 1s ease infinite;
-    animation-delay: .4s;
+    animation-delay: 0.4s;
     transform-origin: center;
     transform-box: fill-box; }
+  .section__service-link-trademark:hover #trademark-circle {
+    animation: rotate-rupee 1s ease;
+    transform-origin: center;
+    transform-box: fill-box; }
+  .section__service-link-partnership:hover {
+    transform: scale(1.1); }
+    .section__service-link-partnership:hover #yellow-card {
+      animation: yellow-card-move 1s ease;
+      transform-origin: center;
+      transform-box: fill-box; }
+    .section__service-link-partnership:hover #green-card {
+      animation: green-card-move 1s ease;
+      transform-origin: center;
+      transform-box: fill-box; }
+    .section__service-link-partnership:hover #blue-card {
+      animation: blue-card-move 1s ease;
+      transform-origin: center;
+      transform-box: fill-box; }
   .section__service-link-import:hover #cargo {
     animation: move-cargo 1s linear; }
   .section__service-link-cutlery:hover #spoon {
     animation: move-cutlery-spoon 1s linear infinite; }
   .section__service-link-cutlery:hover #fork {
     animation: move-cutlery-fork 1s linear infinite;
-    animation-delay: .4s; }
+    animation-delay: 0.4s; }
 
 @keyframes popup-anim {
   from {
@@ -566,6 +584,24 @@ body {
     transform: translate(-25%, -25%); }
   to {
     transform: translateX(0); } }
+
+@keyframes yellow-card-move {
+  from {
+    transform: translate(50%, -50%); }
+  to {
+    transform: translate(0); } }
+
+@keyframes green-card-move {
+  from {
+    transform: translate(-50%, -50%); }
+  to {
+    transform: translate(0); } }
+
+@keyframes blue-card-move {
+  from {
+    transform: translate(-50%, 50%); }
+  to {
+    transform: translate(0); } }
   .section__service-link > i {
     font-size: 4.6rem;
     color: #e2e2e2;

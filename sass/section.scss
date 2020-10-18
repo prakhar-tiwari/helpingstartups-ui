@@ -141,38 +141,38 @@
     &-startup-india {
       &:hover {
         #rotate-arrow {
-          animation: rotate-rupee 1s linear infinite;
+          animation: rotate-rupee 1.5s linear infinite;
           transform-origin: center;
           transform-box: fill-box;
         }
       }
     }
 
-    &-msme{
-      &:hover{
-        #moving-part{
+    &-msme {
+      &:hover {
+        #moving-part {
           animation: move-up-down 1s ease infinite;
         }
-        #moving-part #Vector_2{
+        #moving-part #Vector_2 {
           animation: rotate-round 1s linear infinite;
           transform-origin: center;
           transform-box: fill-box;
         }
-        #buttons{
-          & #Vector_20{
+        #buttons {
+          & #Vector_20 {
             animation: pop-buttons 1s ease infinite;
             transform-origin: center;
             transform-box: fill-box;
           }
-          & #Vector_21{
+          & #Vector_21 {
             animation: pop-buttons 1s ease infinite;
-            animation-delay: .2s;
+            animation-delay: 0.2s;
             transform-origin: center;
             transform-box: fill-box;
           }
-          & #Vector_22{
+          & #Vector_22 {
             animation: pop-buttons 1s ease infinite;
-            animation-delay: .4s;
+            animation-delay: 0.4s;
             transform-origin: center;
             transform-box: fill-box;
           }
@@ -180,22 +180,53 @@
       }
     }
 
-    &-import{
+    &-trademark {
+      &:hover {
+        #trademark-circle {
+          animation: rotate-rupee 1s ease;
+          transform-origin: center;
+          transform-box: fill-box;
+        }
+      }
+    }
+
+    &-partnership{
       &:hover{
-        #cargo{
+        transform: scale(1.1);
+        #yellow-card{
+          animation: yellow-card-move 1s ease;
+          transform-origin: center;
+          transform-box: fill-box;
+        }
+        #green-card{
+          animation: green-card-move 1s ease;
+          transform-origin: center;
+          transform-box: fill-box;
+        }
+        #blue-card{
+          animation: blue-card-move 1s ease;
+          transform-origin: center;
+          transform-box: fill-box;
+        }
+      }
+    }
+
+    &-import {
+      &:hover {
+        #cargo {
           animation: move-cargo 1s linear;
         }
       }
     }
 
-    &-cutlery{
-      &:hover{
-        #spoon{
+    &-cutlery {
+      &:hover {
+        #spoon {
           animation: move-cutlery-spoon 1s linear infinite;
         }
-        #fork{
+        #fork {
           animation: move-cutlery-fork 1s linear infinite;
-          animation-delay: .4s;
+          animation-delay: 0.4s;
         }
       }
     }
@@ -241,7 +272,7 @@
       0% {
         transform: rotateZ(-10deg);
       }
-      100%{
+      100% {
         transform: rotateZ(0deg);
       }
     }
@@ -250,15 +281,15 @@
       0% {
         transform: rotate3d(0, 0, 0, 0deg);
       }
-      100%{
+      100% {
         transform: rotate3d(1, 1, 0, 360deg);
       }
     }
-    @keyframes pop-buttons{
-      from{
-        transform: scale(.8);
+    @keyframes pop-buttons {
+      from {
+        transform: scale(0.8);
       }
-      to{
+      to {
         transform: scale(1.2);
       }
     }
@@ -274,7 +305,7 @@
 
     @keyframes move-cutlery-spoon {
       from {
-        transform: translate(25%,-25%);
+        transform: translate(25%, -25%);
       }
       to {
         transform: translateX(0);
@@ -283,10 +314,37 @@
 
     @keyframes move-cutlery-fork {
       from {
-        transform: translate(-25%,-25%);
+        transform: translate(-25%, -25%);
       }
       to {
         transform: translateX(0);
+      }
+    }
+
+    @keyframes yellow-card-move {
+      from {
+        transform: translate(50%,-50%);
+      }
+      to {
+        transform: translate(0);
+      }
+    }
+
+    @keyframes green-card-move {
+      from {
+        transform: translate(-50%,-50%);
+      }
+      to {
+        transform: translate(0);
+      }
+    }
+
+    @keyframes blue-card-move {
+      from {
+        transform: translate(-50%,50%);
+      }
+      to {
+        transform: translate(0);
       }
     }
 
